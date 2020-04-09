@@ -1,54 +1,231 @@
-.sidenav {
-    float: left;
-    height: 100%;
-    width: 17%;
-    position: fixed;
-    background-color: #111;
-    overflow-x: hidden;
-  }
-  nav ul {
-    list-style-type: none;
+/*Ce contenue sera a propose le stying de notre Projet*/
+
+
+/*Initialisation de margin, padding et bordure a 0 pour évité les valeur par défaut*/
+
+* {
     margin: 0;
     padding: 0;
+    border: 0;
 }
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .topnav {
-    left: 20px ;
+
+
+/*Styling pour les ul tag qu'on as utilisé pour les bars de navigation (Main Nav bar et side-top nav bar) */
+
+ul {
+    list-style-type: none;
+    /* éliminer le style par défaut des list non-ordonnés (les boules) */
+    padding: 15px 0;
     overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
+    /* caché la bar de scrolling */
+    background-color: #445361b4;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #4CAF50;
+    /* centralisé le contenue verticalement*/
+}
+
+
+/*Styling pour mettre les element de notre liste alignée*/
+
+ul li {
+    display: inline;
+}
+
+
+/*Styling pour les lien de notre page (pour chaque a tag de notre list)*/
+
+ul li a {
     color: white;
-  }
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    /*éliminé les decoration standard de text pour les lien*/
+    font-weight: bold;
+    font-family: "Merriweather", Georgia, serif;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+/*le styling pour notre Side nav bar ( On la met au haut et mettre sa position sticky pour toujours rest au haut de la page meme si il scroll la page) */
+
+.sidenav {
+    position: sticky;
+    top: 0;
+}
+
+.sidenav ul {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidenav ul li a:hover {
+    color: #212931;
+    background-color: white;
+    transition: 500ms;
+    /*ceci pour changer les valeurs des propriétés en douceur*/
+    margin: 20px;
+    padding: 21px;
+}
+
+.topnav ul li a:hover {
+    border-bottom: 10px solid white;
+    transition: 400ms;
+}
+
+
+/*Styling général pour le main tag */
+
 main {
+    width: 70vw;
+    margin: auto;
+    /*centralisation piur tout le contenue de main horizentalement*/
+}
+
+
+/*Styling pour les section tags*/
+
+section {
+    padding: 40px 0;
+    line-height: 1.9;
+    /*l'espace vide entre une ligne et une autre*/
+}
+
+
+/*Styling pour les header de chaque section*/
+
+section header {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* -- des image pour le Background de chaque page -- */
+
+
+/*Confugration pour les images de background*/
+
+body {
+    background-repeat: no-repeat;
+    /*Pour que l'image ne repété pas dans le background*/
+    background-size: cover;
+    /*L'image sera cover tout le background avec sa dimension*/
+    background-attachment: fixed;
+    /*L'image sera fixé c'est a dire que lorsqu'on scrollé la page l'image sera rest a ca place */
+}
+
+
+/*background image pour la page initial (Elon Musk)*/
+
+#bodyindex {
+    background-image: url(/Image/ELonMusk.jpg);
+}
+
+
+/*background image pour la page initial (Elon Musk)*/
+
+#bodyNeuralink {
+    background-image: url(/Image/musky1.png);
+}
+
+
+/*background image pour la page Tesla*/
+
+#bodyTesla {
+    background-image: url(/Image/FirstElecCar.jpg);
+}
+
+
+/*background image pour la page SpacX*/
+
+#bodySpaceX {
+    background-image: url(/Image/SpaceXImage.jpg);
+}
+
+
+/*background image pour la page OpenAi*/
+
+#bodyOpenAI {
+    background-image: url(/Image/OpenAIHand.jpeg);
+}
+
+
+/*styling pour le contenue de chaque page*/
+
+.content {
+    background-color: rgba(255, 255, 255, 0.972);
+    position: relative;
+    top: 82vh;
+    /*Initialement la page sera apparue apres 82% de top de le navigateur */
+    width: 80vw;
+    margin: 20px auto;
+    /*Pour centralisé le contenue horizontalement*/
+    border-bottom-left-radius: 20px;
+    /*le radius de bordure bas a gauche*/
+    border-bottom-right-radius: 20px;
+    /*le radius de bordure bas a droite*/
+}
+
+
+/*le styling pour chaque p tag dans notre projet*/
+
+p {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-indent: 30px;
+    /*l'espace vide avant cahque paragraphe de projet*/
+}
+
+
+/*le styling initial pour les cadre des image de notre projet*/
+
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    /* le bordure pour chaque image */
+    width: 200px;
     float: right;
-    padding: 15px;
-    width: 80%;
-} 
+    /* sa position */
+}
+
+
+/* le styling pour le text de description de chaque image */
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*styling pour tous les div que contien les paragraphe de chaque section*/
+
+.Paragraph {
+    padding: 60px 0;
+    /*bien centralisé le contenu verticalement*/
+}
+
+
+/* Styling pour chaque header de notre projet */
+
+h1,
+h2 {
+    color: rgb(52, 94, 148);
+}
+
+h1::before {
+    content: "# ";
+    /* ce contenue sera apparu avant chaque contenu de h1 tag */
+    color: rgb(163, 162, 162);
+}
+
+
+/*Un styling suplémentaire pour le button link de la page initiale */
+
+.MainLink {
+    border: 2px solid white;
+}
+
+.MainLink:hover {
+    background-color: white;
+    color: black;
+}

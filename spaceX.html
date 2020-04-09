@@ -4,127 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styling.css">
-    <title>Document</title>
+    <title>SpaceX</title>
 </head>
 
-<body>
+<body id="bodySpaceX">
+    <!-- Top nav bar (main nav bar pour les pages de projet) -->
     <nav class="topnav">
         <ul>
-            <li><a href="index.html">Elon Musk</a></li>
             <li><a href="tesla.html">Tesla</a></li>
             <li><a href="spaceX.html">SpaceX</a></li>
-            <li><a href="open ai.html">open ai</a></li>
+            <li><a class='MainLink' href="index.html">Elon Musk</a></li>
+            <li><a href="open ai.html">OpenAI</a></li>
             <li><a href="Neuralink.html">Neuralink</a></li>
         </ul>
     </nav>
-    <nav class="sidenav">
-        <ul>
-            <li><a href="#introduction">introduction</a></li>
-            <li><a href="#objectifs">objectifs</a></li>
-            <li><a href="#fusees reutilisables">Fusées réutilisables</a></li>
-            <li><a href="#video">compilation des echecs et dysfunctionements des lancement</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="introduction">
-            <header>
-                <h1>introduction</h1>
-            </header>
-            <p>
-                SpaceX, officiellement Space Exploration Technologies Corporation, est une entreprise américaine
-                travaillant dans le domaine de l'astronautique et du vol spatial.
-                Fondée le 6 mai 2002 par l'entrepreneur milliardaire Elon Musk (à l'époque millionnaire),
-                il s'agit de l'un des deux prestataires privés à qui la NASA a confié un contrat de transport de fret
-                vers la Station spatiale internationale (ISS) dans le cadre du programme COTS.
-            </p>
-            <p>
-                La société SpaceX conçoit, construit et commercialise les lanceurs Falcon 9, les moteurs Merlin qui les
-                propulsent ainsi que le vaisseau cargo Dragon et sa version habitée.
-                Le lanceur Falcon 1 qui a été le premier lanceur de la société n'est plus en service.
-                Après trois échecs en 2006, 2007 et 2008, a lieu le 28 septembre 2008 le premier succès du lanceur
-                Falcon 1, qui met ensuite en orbite le satellite d'observation malaisien RazakSAT lors de son cinquième
-                vol, le 13 juillet 2009.
-                Le cargo spatial Dragon lancé par une fusée Falcon 9 œuvre dans le cadre du programme de ravitaillement
-                de la Station spatiale internationale. SpaceX, qui emploie plus de 6 000 personnes (janvier 2019)
-                essentiellement en Californie, dispose par ailleurs de deux installations de lancement sur la base de
-                Cap Canaveral (les pads SLC-40 et 39A), un à Vandenberg Air Force Base (le pad SLC-4E) et un autre est
-                en cours de construction dans le sud du Texas, à Boca Chica.
-                SpaceX dispose également d'un banc d'essais pour ses moteurs au Texas.
-            </p>
-        </section>
-        <section id="objectifs">
-            <header>
-                <h1>objectifs</h1>
-            </header>
-            <p>
-                Le PDG de SpaceX Elon Musk déclare que l'un de ses objectifs était de réduire les coûts et d'améliorer
-                la fiabilité de l'accès à l'espace d’un facteur de dix.
-                L'entreprise déclarait en 2004 vouloir développer un système de transport lourd, voire super-lourd, si
-                la demande des clients suivait sachant qu’à chaque augmentation de taille résulte une diminution
-                significative du coût par kilogramme en orbite.
-                Elon Musk disait alors : « Je pense que 500 $ par livre (1 100 $ / kg) ou moins est très réalisable ».
-            </p>
-            <p>
-                SpaceX conçoit de nouvelles technologies de développement et d'ingénierie pour lui permettre de
-                poursuivre ses différents objectifs.
-                En 2015, des sources publiques ont révélé que SpaceX développait ses propres logiciels de simulation de
-                dynamique des fluides afin d'améliorer leur capacité de simulation, d'évaluation et de conception des
-                moteurs de fusée.
+    <div class="content">
+        <!-- Side nav bar (main nav bar pour zapper entre les déffirent section de notre page) -->
+        <nav class="sidenav">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#objectifs">Objectifs</a></li>
+                <li><a href="#fusees reutilisables">Fusées réutilisables</a></li>
+                <li><a href="#video">Compilation des echecs et dysfunctionements des lancement</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="introduction">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <div>
+                    <p>
+                        SpaceX, officiellement Space Exploration Technologies Corporation, est une entreprise américaine travaillant dans le domaine de l'astronautique et du vol spatial. Fondée le 6 mai 2002 par l'entrepreneur milliardaire Elon Musk (à l'époque millionnaire),
+                        il s'agit de l'un des deux prestataires privés à qui la NASA a confié un contrat de transport de fret vers la Station spatiale internationale (ISS) dans le cadre du programme COTS.
+                    </p>
+                    <div style="float: right;width:500;text-align: center;">
+                        <img src="/Image/SpaceX-Logo.svg" alt="Img" width="500" height="50">
+                        <div class="desc">Logo de SpaceX.</div>
+                    </div>
+                    <p>
+                        La société SpaceX conçoit, construit et commercialise les lanceurs Falcon 9, les moteurs Merlin qui les propulsent ainsi que le vaisseau cargo Dragon et sa version habitée. Le lanceur Falcon 1 qui a été le premier lanceur de la société n'est plus en service.
+                        Après trois échecs en 2006, 2007 et 2008, a lieu le 28 septembre 2008 le premier succès du lanceur Falcon 1, qui met ensuite en orbite le satellite d'observation malaisien RazakSAT lors de son cinquième vol, le 13 juillet 2009.
+                        Le cargo spatial Dragon lancé par une fusée Falcon 9 œuvre dans le cadre du programme de ravitaillement de la Station spatiale internationale. SpaceX, qui emploie plus de 6 000 personnes (janvier 2019) essentiellement en Californie,
+                        dispose par ailleurs de deux installations de lancement sur la base de Cap Canaveral (les pads SLC-40 et 39A), un à Vandenberg Air Force Base (le pad SLC-4E) et un autre est en cours de construction dans le sud du Texas, à Boca
+                        Chica. SpaceX dispose également d'un banc d'essais pour ses moteurs au Texas.
+                    </p>
+                </div>
+            </section>
+            <section id="objectifs">
+                <header>
+                    <h1>Objectifs</h1>
+                </header>
+                <div>
+                    <p>
+                        Le PDG de SpaceX Elon Musk déclare que l'un de ses objectifs était de réduire les coûts et d'améliorer la fiabilité de l'accès à l'espace d’un facteur de dix. L'entreprise déclarait en 2004 vouloir développer un système de transport lourd, voire super-lourd,
+                        si la demande des clients suivait sachant qu’à chaque augmentation de taille résulte une diminution significative du coût par kilogramme en orbite. Elon Musk disait alors : « Je pense que 500 $ par livre (1 100 $ / kg) ou moins
+                        est très réalisable ».
+                    </p>
+                    <div class="gallery">
+                        <img src="/Image/Falcon_Heavy_Pad_39A_(21048044876).jpg" alt="Img" width="200" height="250">
+                        <div class="desc">Vue d’artiste de la Falcon Heavy sur le pas de tir 39A.</div>
+                    </div>
+                    <p>
+                        SpaceX conçoit de nouvelles technologies de développement et d'ingénierie pour lui permettre de poursuivre ses différents objectifs. En 2015, des sources publiques ont révélé que SpaceX développait ses propres logiciels de simulation de dynamique des
+                        fluides afin d'améliorer leur capacité de simulation, d'évaluation et de conception des moteurs de fusée.
 
-            </p>
-            <p>
-                En juin 2015, la société a demandé au gouvernement fédéral américain l'autorisation de commencer des
-                essais pour un projet qui vise à construire une constellation de 4 000 satellites capables de donner
-                accès à Internet au monde entier, y compris les régions les plus reculées qui ne disposent actuellement
-                pas d’infrastructures.
+                    </p>
+                    <p>
+                        En juin 2015, la société a demandé au gouvernement fédéral américain l'autorisation de commencer des essais pour un projet qui vise à construire une constellation de 4 000 satellites capables de donner accès à Internet au monde entier, y compris les régions
+                        les plus reculées qui ne disposent actuellement pas d’infrastructures.
 
-            </p>
-        </section>
-        <section id="fusees reutilisables">
-            <header>
-                <h1>Fusées réutilisables</h1>
-            </header>
-            <p>
-                Depuis le début du développement de ses fusées, SpaceX souhaite les rendre au moins en partie
-                réutilisables pour permettre de diminuer les coûts.
-                Dans le cadre de cet effort, un prototype, le Grasshopper, a été développé pour mettre au point les
-                technologies nécessaires puis SpaceX a tenté de faire atterrir de manière autonome le premier étage des
-                fusées Falcon 9.
-                Plusieurs tentatives ont dans un premier temps réussi la phase préliminaire qui consiste à faire revenir
-                les fusées Falcon 9 vers la Terre d’une manière contrôlée.
-                Les fusées ont été en mesure de ralentir à une vitesse appropriée avant l'atterrissage et de déployer
-                avec succès les jambes d’atterrissage.
-                Ces essais ont cependant eu lieu sur l'océan et non pas sur une rampe de lancement d’une de leurs
-                installations. À la suite de ces essais, SpaceX a commencé des tests pour voir si la fusée pourrait
-                atterrir sur une plate-forme solide.
-                Pour des raisons de sécurité, SpaceX a conçu une plateforme maritime autonome permettant de servir de
-                rampe d’atterrissage au milieu de l’océan.
-            </p>
-            <p>
-                Le 10 janvier 2015, lors de la mission CRS-5 (Commercial Resupply Service 5) à destination de l’ISS, le
-                premier étage de la fusée a été lancé avec comme objectif d’être la première fusée à revenir se reposer
-                sur terre pour être réutilisée.
-                L'engin a réussi à s’approcher de la plateforme d’atterrissage mais avec une trop grande vitesse. La
-                fusée s’est alors renversée et est tombée dans l'eau et a été en grande partie détruite.
-                Le navire drone a également connu quelques dommages structurels, mais rien d'irréparable. Elon Musk
-                tweete alors « landed hard » (s’est posé violemment). La cause de cet échec a été découverte après coup.
-                Il s’agissait des grilles supersoniques de contrôle montées sur la fusée afin de contrôler et stabiliser
-                la descente.
-                Le fluide hydraulique permettant de les actionner n’était plus en quantité suffisante et les grilles ont
-                cessé de fonctionner correctement20.
+                    </p>
+                </div>
+            </section>
+            <section id="fusees reutilisables">
+                <header>
+                    <h1>Fusées réutilisables</h1>
+                </header>
+                <div class="gallery">
+                    <img src="/Image/SpaceX_ASDS_in_position_prior_to_Falcon_9_Flight_17_carrying_CRS-6_(17127808431).jpg" alt="Img" width="200" height="200">
+                    <div class="desc">Plateforme d’atterrissage SpaceX ASDS en position pour le vol 17 de la mission CRS-6.
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        Depuis le début du développement de ses fusées, SpaceX souhaite les rendre au moins en partie réutilisables pour permettre de diminuer les coûts. Dans le cadre de cet effort, un prototype, le Grasshopper, a été développé pour mettre au point les technologies
+                        nécessaires puis SpaceX a tenté de faire atterrir de manière autonome le premier étage des fusées Falcon 9. Plusieurs tentatives ont dans un premier temps réussi la phase préliminaire qui consiste à faire revenir les fusées Falcon
+                        9 vers la Terre d’une manière contrôlée. Les fusées ont été en mesure de ralentir à une vitesse appropriée avant l'atterrissage et de déployer avec succès les jambes d’atterrissage. Ces essais ont cependant eu lieu sur l'océan
+                        et non pas sur une rampe de lancement d’une de leurs installations. À la suite de ces essais, SpaceX a commencé des tests pour voir si la fusée pourrait atterrir sur une plate-forme solide. Pour des raisons de sécurité, SpaceX
+                        a conçu une plateforme maritime autonome permettant de servir de rampe d’atterrissage au milieu de l’océan.
+                    </p>
+                    <div class="gallery" style="float: left;">
+                        <img src="/Image/Falcon_9_Flight_20_OG2_first_stage_post-landing_(23273082823).jpg" alt="Img" width="200" height="200">
+                        <div class="desc">Premier étage de la fusée Falcon 9 après son atterrissage.</div>
+                    </div>
+                    <p>
+                        Le 10 janvier 2015, lors de la mission CRS-5 (Commercial Resupply Service 5) à destination de l’ISS, le premier étage de la fusée a été lancé avec comme objectif d’être la première fusée à revenir se reposer sur terre pour être réutilisée. L'engin a réussi
+                        à s’approcher de la plateforme d’atterrissage mais avec une trop grande vitesse. La fusée s’est alors renversée et est tombée dans l'eau et a été en grande partie détruite. Le navire drone a également connu quelques dommages structurels,
+                        mais rien d'irréparable. Elon Musk tweete alors « landed hard » (s’est posé violemment). La cause de cet échec a été découverte après coup. Il s’agissait des grilles supersoniques de contrôle montées sur la fusée afin de contrôler
+                        et stabiliser la descente. Le fluide hydraulique permettant de les actionner n’était plus en quantité suffisante et les grilles ont cessé de fonctionner correctement20.
 
-            </p>
-        </section>
-        <section id="video">
-            <header>
-                <h1>compilation des echecs et dysfunctionements des lancement</h1>
-            </header>
-            <p>poster par la chaine officiel de SpaceX en 14 septembre 2017</p>
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/bvim4rsNHkQ" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
-    </main>
+                    </p>
+                </div>
+            </section>
+            <section id="video">
+                <header>
+                    <h1>Compilation des echecs et dysfunctionements des lancement</h1>
+                </header>
+                <div style="text-align: center;">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/bvim4rsNHkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>poster par la chaine officiel de SpaceX en 14 septembre 2017</p>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
