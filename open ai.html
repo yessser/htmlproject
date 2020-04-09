@@ -4,88 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styling.css">
-    <title>Document</title>
+    <title>OpenAi</title>
 </head>
 
-<body>
+<body id="bodyOpenAI">
+    <!-- Top nav bar (main nav bar pour les pages de projet) -->
     <nav class="topnav">
         <ul>
-            <li><a href="index.html">Elon Musk</a></li>
             <li><a href="tesla.html">Tesla</a></li>
             <li><a href="spaceX.html">SpaceX</a></li>
-            <li><a href="open ai.html">open ai</a></li>
+            <li><a class='MainLink' href="index.html">Elon Musk</a></li>
+            <li><a href="open ai.html">OpenAI</a></li>
             <li><a href="Neuralink.html">Neuralink</a></li>
         </ul>
     </nav>
-    <nav class="sidenav">
-        <ul>
-            <li><a href="#introduction">introduction</a></li>
-            <li><a href="#produits">produits</a></li>
-            <li><a href="#GPT2">- GPT2</a></li>
-            <li><a href="#OpenAi Five">- OpenAI Five</a></li>
-            <li><a href="#Main robot">- Main robot</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="introduction">
-            <header>
-                <h1>Introduction</h1>
-            </header>
-            <p>
-                OpenAI (« AI » pour Artificial Intelligence, ou Intelligence artificielle) est une entreprise à « but
-                lucratif plafonné » en intelligence artificielle, basée à San Francisco. Avant mars 2019, elle était
-                reconnue association à but non lucratif. L'objectif de cette société est de promouvoir et développer une
-                intelligence artificielle à visage humain qui bénéficiera à toute l'humanité.
-            </p>
-        </section>
-        <section id="produits">
-            <header>
-                <h1>Produits</h1>
-            </header>
-            <section id="GPT2">
+    <div class="content">
+        <!-- Side nav bar (main nav bar pour zapper entre les déffirent section de notre page) -->
+        <nav class="sidenav">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#GPT2">GPT2</a></li>
+                <li><a href="#OpenAI Five"> OpenAI Five</a></li>
+                <li><a href="#Main robot"> Main robot</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="introduction">
                 <header>
-                    <h1>GPT2</h1>
+                    <h1>Introduction</h1>
                 </header>
-                <p>
-                    OpenAI a mis au point une intelligence artificielle nommée GPT2 capable d'écrire des articles de
-                    presse et des œuvres de fiction.
-                    Reposant sur un générateur de texte qui assimile les mots reçus et détermine la suite la plus
-                    logique qu'elle retransmet dans le même style,
-                    elle s'avère particulièrement performante, à tel point qu'il est impossible de faire la différence
-                    avec un texte écrit par un être humain.
-                </p>
-                <p>
-                    Les chercheurs lui ont par exemple donné à lire la première phrase du roman 1984 de George Orwell :
-                    « C'était une journée ensoleillée et froide du mois d'avril et les horloges affichaient 13h ».
-                    GPT2 a alors compris qu'il s'agissait d'une œuvre évoquant le futur et écrite sous la forme d'une
-                    fiction et a ajouté : « J'étais dans ma voiture à Seattle en route pour mon nouveau travail.
-                    J'ai fait le plein, mis la clé sur le contact, et me suis laissé porter. J'ai imaginé à quoi
-                    ressemblerait ce jour. Dans cent ans à partir de ce jour.
-                    En 2045, j'étais professeur dans une école située dans une région pauvre de la Chine rurale. J'ai
-                    commencé avec l'Histoire de la Chine et l'Histoire de la science ».
-                    Ils lui ont également présenté un article du Guardian sur le Brexit et l'IA a été capable d'inventer
-                    des citations crédibles du député Jeremy Corbyn, principal opposant à Theresa May, et d'évoquer des
-                    thématiques précises liées au sujet, comme celle de la frontière irlandaise.
-                </p>
-                <p>Les chercheurs retardent la publication de leurs recherches car ils estiment que GPT2 a un potentiel
-                    « trop dangereux », étant donné que cette IA pourrait à terme servir à des actes mal intentionnées
-                    comme générer des avis négatifs ou positifs sur des produits, des spams, des textes complotistes,
-                    voire des fausses nouvelles.
-                </p>
-            </section >
-            <section id="OpenAI Five">
-                <header><h1>OpenAI Five</h1></header>
-                <p>un ai pour le jeux dota 2 qui a arrivee a battre des equipes proffesional du jeux</p>
+                <div class="Paragraph" style="text-align: center;">
+                    <p>
+                        OpenAI (« AI » pour Artificial Intelligence, ou Intelligence artificielle) est une entreprise à « but lucratif plafonné » en intelligence artificielle, basée à San Francisco. Avant mars 2019, elle était reconnue association à but non lucratif. L'objectif
+                        de cette société est de promouvoir et développer une intelligence artificielle à visage humain qui bénéficiera à toute l'humanité.
+                    </p>
+                </div>
+                <div style="float: none;width:900;text-align: center;">
+                    <img src="/Image/openai-offsite-july-2019.jpg" alt="Img" width="900" height="250">
+                    <div class="desc">OpenAI team and their families at their July 2019 offsite.</div>
+                </div>
             </section>
+<<<<<<< HEAD
             <section id="Main robot">
                 <header><h1>Main robot</h1></header>
                 <p>une main a forme humaine qui a appris a controler a cube dans ca main</p>
                 <iframe width="616" height="347" src="https://www.youtube.com/embed/jwSbzNHGflM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>la main peut aussi resoudre un rubik cube </p>
                 <iframe width="616" height="347" src="https://www.youtube.com/embed/x4O8pojMF0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+=======
+            <section id="produits">
+                <header>
+                    <h1>Produits</h1>
+                </header>
+                <section id="GPT2">
+                    <header>
+                        <h1>GPT2</h1>
+                    </header>
+                    <div style="text-align: center;">
+                        <p>
+                            OpenAI a mis au point une intelligence artificielle nommée GPT2 capable d'écrire des articles de presse et des œuvres de fiction. Reposant sur un générateur de texte qui assimile les mots reçus et détermine la suite la plus logique qu'elle retransmet
+                            dans le même style, elle s'avère particulièrement performante, à tel point qu'il est impossible de faire la différence avec un texte écrit par un être humain.
+                        </p>
+                        <img src="/Image/acastro.jpeg" alt="Img" width="950" height="400">
+                        <p>
+                            Les chercheurs lui ont par exemple donné à lire la première phrase du roman 1984 de George Orwell : « C'était une journée ensoleillée et froide du mois d'avril et les horloges affichaient 13h ». GPT2 a alors compris qu'il s'agissait d'une œuvre évoquant
+                            le futur et écrite sous la forme d'une fiction et a ajouté : « J'étais dans ma voiture à Seattle en route pour mon nouveau travail. J'ai fait le plein, mis la clé sur le contact, et me suis laissé porter. J'ai imaginé à quoi
+                            ressemblerait ce jour. Dans cent ans à partir de ce jour. En 2045, j'étais professeur dans une école située dans une région pauvre de la Chine rurale. J'ai commencé avec l'Histoire de la Chine et l'Histoire de la science ».
+                            Ils lui ont également présenté un article du Guardian sur le Brexit et l'IA a été capable d'inventer des citations crédibles du député Jeremy Corbyn, principal opposant à Theresa May, et d'évoquer des thématiques précises liées
+                            au sujet, comme celle de la frontière irlandaise.
+                        </p>
+                        <p>Les chercheurs retardent la publication de leurs recherches car ils estiment que GPT2 a un potentiel « trop dangereux », étant donné que cette IA pourrait à terme servir à des actes mal intentionnées comme générer des avis négatifs
+                            ou positifs sur des produits, des spams, des textes complotistes, voire des fausses nouvelles.
+                        </p>
+                    </div>
+                </section>
+                <section id="OpenAI Five" style="text-align: center;">
+                    <header>
+                        <h1>OpenAI Five</h1>
+                    </header>
+                    <p>un ai pour le jeux dota 2 qui a arrivee a battre des equipes proffesional du jeux</p>
+                </section>
+                <section id="Main robot" style="text-align: center;">
+
+                    <head>
+                        <h1>Main robot</h1>
+                    </head>
+                    <div>
+                        <p>une main a forme humaine qui a appris a controler a cube dans ca main</p>
+                        <iframe width="616" height="347" src="https://www.youtube.com/embed/jwSbzNHGflM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video Here</iframe>
+                        <p>la main peut aussi resoudre un rubik cube </p>
+                    </div>
+                    <iframe width="616" height="347" src="https://www.youtube.com/embed/x4O8pojMF0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+>>>>>>> 1819624b77948d544a69891dde21c41eb4cb0ec0
             </section>
-        </section>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>

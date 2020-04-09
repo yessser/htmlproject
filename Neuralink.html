@@ -4,60 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styling.css">
-    <title>Document</title>
+    <title>Neuralink</title>
 </head>
 
-<body>
+<body id="bodyNeuralink">
+    <!-- Top nav bar (main nav bar pour les pages de projet) -->
     <nav class="topnav">
         <ul>
-            <li><a href="index.html">Elon Musk</a></li>
             <li><a href="tesla.html">Tesla</a></li>
             <li><a href="spaceX.html">SpaceX</a></li>
-            <li><a href="open ai.html">open ai</a></li>
+            <li><a class='MainLink' href="index.html">Elon Musk</a></li>
+            <li><a href="open ai.html">OpenAI</a></li>
             <li><a href="Neuralink.html">Neuralink</a></li>
         </ul>
     </nav>
-    <nav class="sidenav">
-        <ul>
-            <li><a href="#introduction">introduction</a></li>
-            <li><a href="#histoire">histoire</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="Introduction">
-            <header>
-                <h1>Introduction</h1>
-            </header>
-            <p>
-                Neuralink est une startup américaine neurotechnologique qui développe des implants cérébraux
-                d'interfaces neuronales directes,
-                cofondée par Elon Musk et l’équipe fondatrice (Ben Rapoport, Dongjin Seo, Max Hodak, Paul Merolla,
-                Philip Sabes, Tim Gardner, Tim Hanson, Vanessa Tolosa) en 2016.
-                Son quartier général est situé à San Francisco.
-            </p>
-            <p>
-                La société vise à développer des composants électroniques pouvant être intégrés dans le cerveau, par
-                exemple pour augmenter la mémoire ou piloter des terminaux, et éventuellement pour mieux marier le
-                cerveau et l'intelligence artificielle.
-            </p>
-        </section>
-        <section id="Histoire">
-            <header>
-                <h1>histoire</h1>
-            </header>
-            <p>
-                En juillet 2019, Elon Musk a expliqué que la société a déjà greffé des capteurs dans le cerveau d'un
-                singe pour lui permettre de contrôler mentalement un ordinateur.
-                Un projet d'implantation de micro-électrodes chez une personne paralysée pour cause de lésion de la
-                moelle épinière, en préparation, pourrait être expérimenté avant fin 2020, si la Food and Drug
-                Administration donne son autorisation.
-            </p>
-            <p>
-                Neuralink a l'intention de commencer à travailler avec des sujets de tests humains en 2020, grâce à des
-                collaborations avec des neurochirurgiens de Stanford et d'autres institutions.
-            </p>
-        </section>
-    </main>
+    <div class="content" id="contentNeuralLink">
+        <!-- Side nav bar (main nav bar pour zapper entre les déffirent section de notre page) -->
+        <nav class="sidenav">
+            <ul>
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Histoire">Histoire</a></li>
+                <li><a href="#Premiers_cobayes_humains ">Premiers cobayes humains</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="Introduction">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <p>
+                    maginez qu'un robot opère votre boîte cranienne pour installer des puces électroniques et des électrodes dans votre cerveau, et qu'ensuite, en vous collant un boîtier minuscule derrière l'oreille, vous puissiez alors directement contrôler un ordinateur
+                    ou un smartphone… par la pensée. Ce scénario n'est pas celui d'un épisode de la série d'anticipation dystopique "Black Mirror" — bien qu'y ressemblant fortement — mais celui du projet Neuralink de l'entreprise éponyme d'Elon Musk.
+                    Bienvenue dans le monde futuriste du cerveau connecté, avec toutes les réserves, tant techniques, éthiques et médicales que celui-ci comporte…
+                </p>
+                <br>
+                <p>
+                    Neuralink est une startup américaine neurotechnologique qui développe des implants cérébraux d'interfaces neuronales directes, cofondée par Elon Musk et l’équipe fondatrice (Ben Rapoport, Dongjin Seo, Max Hodak, Paul Merolla, Philip Sabes, Tim Gardner,
+                    Tim Hanson, Vanessa Tolosa) en 2016. Son quartier général est situé à San Francisco.
+                </p>
+                <p>
+                    La société vise à développer des composants électroniques pouvant être intégrés dans le cerveau, par exemple pour augmenter la mémoire ou piloter des terminaux, et éventuellement pour mieux marier le cerveau et l'intelligence artificielle.
+                </p>
+            </section>
+            <section id="Histoire">
+                <header>
+                    <h1>Histoire</h1>
+                </header>
+                <div class="gallery">
+                    <img src="/Image/Neuralink_4 (1).jpg" alt="Img" width="200" height="200">
+                    <div class="desc">Neuralink prototype device.</div>
+                </div>
+                <div>
+                    <p>
+                        En juillet 2019, Elon Musk a expliqué que la société a déjà greffé des capteurs dans le cerveau d'un singe pour lui permettre de contrôler mentalement un ordinateur. Un projet d'implantation de micro-électrodes chez une personne paralysée pour cause de
+                        lésion de la moelle épinière, en préparation, pourrait être expérimenté avant fin 2020, si la Food and Drug Administration donne son autorisation.
+                    </p>
+                    <p>
+                        Neuralink a l'intention de commencer à travailler avec des sujets de tests humains en 2020, grâce à des collaborations avec des neurochirurgiens de Stanford et d'autres institutions.
+                    </p>
+                </div>
+            </section>
+            <section id="Premiers_cobayes_humains">
+                <header>
+                    <h1>
+                        Premiers cobayes humains
+                    </h1>
+                </header>
+                <div class="gallery">
+                    <img src="/Image/needle-on-bot-2 (1)(1).jpg" alt="Img" width="200" height="250">
+                    <div class="desc">Neuralink surgical robot.</div>
+                </div>
+                <div>
+                    <p>
+                        Un singe a servi de cobaye au système Neuralink, selon Musk et son équipe, et a réussi à "contrôler un ordinateur par la pensée". Cette première étape semble donner des ailes au PDG de la startup, qui annonce les premiers implants sur des êtres humains
+                        en 2020. Les différentes étapes du projet Neuralink donnent un peu le vertige.
+                    </p>
+                    <p>
+                        Si, au départ, la startup envisage le traitement des maladies neurologiques (Parkinson, dépression, épilepsie) grâce à son système ainsi que le contrôle de membres robotisés par la pensée pour les handicapés, elle compte aussi — et surtout— offrir une
+                        "amélioration des performances et des capacités cognitives humaines".
+                    </p>
+                    <p>
+                        Les possibilités de Neuralink sont quasi infinies — selon ses concepteurs —, au point, par exemple, d'imaginer "un téléchargement d'informations au sujet d'une ville entière" dans le cerveau d'un bénéficiaire des implants. Si l'humain au "cerveau augmenté"
+                        est l'objectif d'Elon Musk, les craintes sur la technologie de Neuralink sont à la mesure de ses possibilités : immenses.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
