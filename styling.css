@@ -1,5 +1,3 @@
-/*Ce contenue sera a propose le stying de notre Projet*/
-
 
 /*Initialisation de margin, padding et bordure a 0 pour évité les valeur par défaut*/
 
@@ -10,21 +8,21 @@
 }
 
 
-/*Styling pour les ul tag qu'on as utilisé pour les bars de navigation (Main Nav bar et side-top nav bar) */
+/*Styling pour les ul tag qu'on a utilisé pour les bars de navigation (Main Nav bar et side-top nav bar) */
 
 ul {
     list-style-type: none;
-    /* éliminer le style par défaut des list non-ordonnés (les boules) */
+    /* élimine le style par défaut des list non-ordonnés (les boules) */
     padding: 15px 0;
     overflow: hidden;
-    /* caché la bar de scrolling */
+    /* cache la bar de defilement */
     background-color: #445361b4;
     text-align: center;
-    /* centralisé le contenue verticalement*/
+    /* centralise le contenue verticalement*/
 }
 
 
-/*Styling pour mettre les element de notre liste alignée*/
+/*Styling pour aligner les element de notre liste*/
 
 ul li {
     display: inline;
@@ -46,7 +44,7 @@ ul li a {
 }
 
 
-/*le styling pour notre Side nav bar ( On la met au haut et mettre sa position sticky pour toujours rest au haut de la page meme si il scroll la page) */
+/*le styling pour notre Side nav bar ( On la met au haut et mettre sa position sticky pour toujours rester en haut de la page meme si il scroll la page) */
 
 .sidenav {
     position: sticky;
@@ -100,50 +98,50 @@ section header {
 }
 
 
-/* -- des image pour le Background de chaque page -- */
+/* -- des images pour l'arrière plan de chaque page -- */
 
 
-/*Confugration pour les images de background*/
+/*Configuration pour les images de background*/
 
 body {
     background-repeat: no-repeat;
-    /*Pour que l'image ne repété pas dans le background*/
+    /*Pour que l'image ne ce repete pas dans l'arrière  plan*/
     background-size: cover;
     /*L'image sera cover tout le background avec sa dimension*/
     background-attachment: fixed;
-    /*L'image sera fixé c'est a dire que lorsqu'on scrollé la page l'image sera rest a ca place */
+    /*L'image sera fixé c'est a dire que lorsqu'on scrolle la page l'image sera fixe */
 }
 
 
-/*background image pour la page initial (Elon Musk)*/
+/*image d'arrière plan pour la page initial (Elon Musk)*/
 
 #bodyindex {
     background-image: url(/Image/ELonMusk.jpg);
 }
 
 
-/*background image pour la page initial (Elon Musk)*/
+/*image d'arrière plan pour la page NeuralLink */
 
 #bodyNeuralink {
     background-image: url(/Image/musky1.png);
 }
 
 
-/*background image pour la page Tesla*/
+/*image d'arrière plan pour la page Tesla*/
 
 #bodyTesla {
     background-image: url(/Image/FirstElecCar.jpg);
 }
 
 
-/*background image pour la page SpacX*/
+/*image d'arrière plan pour la page SpacX*/
 
 #bodySpaceX {
     background-image: url(/Image/SpaceXImage.jpg);
 }
 
 
-/*background image pour la page OpenAi*/
+/*image d'arrière plan pour la page OpenAi*/
 
 #bodyOpenAI {
     background-image: url(/Image/OpenAIHand.jpeg);
